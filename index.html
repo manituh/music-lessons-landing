@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Music Lessons Platform</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #f5f5f5 url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20 0L40 20L20 40L0 20z" fill="%23e0e0e0"/></svg>') repeat;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .maintenance-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            padding: 2.5rem;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .maintenance-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #FF4B2B, #FF416C);
+        }
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        h1::after {
+            content: '🎼';
+            position: absolute;
+            top: -10px;
+            right: -40px;
+            font-size: 1.5rem;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+        .status {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border: 1px solid #e9ecef;
+        }
+        .status-title {
+            color: #495057;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .progress {
+            width: 100%;
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        .progress-bar {
+            width: 75%;
+            height: 100%;
+            background: linear-gradient(90deg, #FF4B2B, #FF416C);
+            animation: progress 2s ease-in-out infinite;
+        }
+        @keyframes progress {
+            0% { width: 65%; }
+            50% { width: 85%; }
+            100% { width: 65%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <h1>Under Construction</h1>
+        <p>We're building something amazing! Our new music lessons platform will be launching soon, bringing together students and teachers in a harmonious learning experience.</p>
+        <div class="status">
+            <div class="status-title">Development Progress</div>
+            <p>Final touches in progress. The melody is almost perfect! 🎵</p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <p>Thank you for your patience. We're working diligently to create the best possible experience for our music community.</p>
+    </div>
+</body>
+</html>
